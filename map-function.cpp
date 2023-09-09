@@ -23,7 +23,7 @@ std::vector<R> map(const std::vector<T>& vec, F&& fun)
 template<typename T>
 std::vector<T*> rawpointers(const std::vector<std::unique_ptr<T>>& ptrs)
 {
-  std::vector<Lane*> res;
+  std::vector<T*> res;
   res.reserve(ptrs.size());
   std::transform(ptrs.begin(), ptrs.end(), std::back_inserter(res),
     [](const std::unique_ptr<T>& ptr) -> T* { return ptr.get(); });
