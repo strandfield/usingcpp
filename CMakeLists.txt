@@ -5,7 +5,7 @@ project(usingcpp)
 set(CMAKE_CXX_STANDARD 17)
 
 function(add_cpp_executable name path)
-  add_executable(${name} ${file_path})
+  add_executable(${name} ${path})
   if (NOT DEFINED WIN32)
     target_link_libraries(${name} pthread)
   endif()
