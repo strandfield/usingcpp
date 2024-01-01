@@ -1,0 +1,21 @@
+---
+# options: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+BasedOnStyle: LLVM
+IndentWidth: 4
+ColumnLimit: 80
+# does (int) x instead of (int)x
+SpaceAfterCStyleCast: false
+# int* a
+PointerAlignment: Left 
+# spaces, not tabs!
+UseTab: Never
+# if (x) doStuff()
+AllowShortIfStatementsOnASingleLine: true
+# 
+AlignTrailingComments: true
+SpacesBeforeTrailingComments: 1
+#  #define SHORT_NAME       42
+#  #define LONGER_NAME      0x007f   # does nice spacing for macros
+AlignConsecutiveMacros: Consecutive
+# use \n instead of \r\n
+UseCRLF: false
