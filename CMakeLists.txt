@@ -21,3 +21,5 @@ function(add_executables)
 endfunction(add_executables)
 
 add_executables()
+
+add_cpp_executable("increasing-subset" "${CMAKE_CURRENT_LIST_DIR}/increasing-subset/increasing-subset.cpp")
